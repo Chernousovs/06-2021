@@ -6,26 +6,28 @@ namespace MoreVariablesAndPrinting
     {
         static void Main(string[] args)
         {
-            string myName, myEyes, myTeeth, myHair;
-            int myAge, myHeight, myWeight;
+            string name = "Zed A. Shaw", 
+                eyes = "Blue", 
+                teeth = "White", 
+                hair = "Brown";
 
-            myName = "Zed A. Shaw";
-            myAge = 35;
-            myHeight = 74;  // inches
-            myWeight = 180; // lbs
-            myEyes = "Blue";
-            myTeeth = "White";
-            myHair = "Brown";
+            int age = 35,
+                inchHeight = 74,
+                lbsWeight = 180;
 
-            Console.WriteLine("Let's talk about " + myName + ".");
-            Console.WriteLine("He's " + myHeight + " inches tall.");
-            Console.WriteLine("He's " + myWeight + " pounds heavy.");
-            Console.WriteLine("Actually, that's not too heavy.");
-            Console.WriteLine("He's got " + myEyes + " eyes and " + myHair + " hair.");
-            Console.WriteLine("His teeth are usually " + myTeeth + " depending on the coffee.");
+            decimal cmHeight = Convert.ToDecimal(inchHeight * 2.54);
 
-            Console.WriteLine("If I add " + myAge + ", " + myHeight + ", and " + myWeight
-                               + " I get " + (myAge + myHeight + myWeight) + ".");
+            double kgWeight = Math.Round(lbsWeight * 0.453592, 2), 
+                totalResult = Convert.ToDouble(age) + Convert.ToDouble(cmHeight) + kgWeight;
+
+            Console.WriteLine($"Let's talk about {name}.\n" +
+                              $"He's {cmHeight} centimeters tall.\n" +
+                              $"He's {kgWeight} kilos heavy.\n" +
+                              "Actually, that's not too heavy.\n" +
+                              $"He's got {eyes} eyes and {hair} hair.\n" +
+                              $"His teeth are usually {teeth} depending on the coffee.");
+
+            Console.WriteLine($"If I add {age}, {cmHeight} and {kgWeight} I get {Math.Round(totalResult, 2)}.");
 
             Console.ReadKey();
         }
