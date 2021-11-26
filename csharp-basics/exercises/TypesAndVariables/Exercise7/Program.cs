@@ -8,7 +8,7 @@ namespace Exercise7
         static void Main(string[] args)
         {
             string repeatProgram;
-            Console.WriteLine("Please enter string:");
+            Console.WriteLine("Please enter sentence:");
             do
             {
                 var enteredString = Console.ReadLine();
