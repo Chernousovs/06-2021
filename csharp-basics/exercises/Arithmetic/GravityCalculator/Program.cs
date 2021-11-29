@@ -11,9 +11,15 @@ namespace GravityCalculator
             double initialVelocity = 0.0;
             double fallingTime = 10.0;
             double initialPosition = 0.0;
-            double finalPosition = 0.0;
+            double finalPosition = FinalPositionCalc(gravity, fallingTime, initialVelocity, initialPosition);
+
             Console.WriteLine("The object's position after " + fallingTime + " seconds is " + finalPosition + " m.");
             Console.ReadKey();
+        }
+
+        public static double FinalPositionCalc(double gravity, double fallingTime, double initialVelocity, double initialPosition)
+        {
+            return 0.5 * gravity * Math.Pow(fallingTime, 2) + initialVelocity * fallingTime + initialPosition;
         }
     }
 }
