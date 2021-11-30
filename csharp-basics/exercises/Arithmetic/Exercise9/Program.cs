@@ -14,7 +14,7 @@ namespace Exercise9
             int heightCm = Convert.ToInt32(Console.ReadLine());
             double bmi = BmiCalculation(weightKg, heightCm);
 
-            if (bmi < 25 && bmi > 18.5)
+            if (bmi <= 25 && bmi >= 18.5)
             {
                 Console.WriteLine($"BMI is {bmi}, it is optimal index.");
             }

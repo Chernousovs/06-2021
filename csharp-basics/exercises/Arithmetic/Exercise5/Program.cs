@@ -21,7 +21,7 @@ namespace Exercise5
             {
                 Console.WriteLine($"Sorry, you are too low.  I was thinking of {num}");
             }
-            else if (guess > num)
+            else
             {
                 Console.WriteLine($"Sorry, you are too high.  I was thinking of {num}");
             }

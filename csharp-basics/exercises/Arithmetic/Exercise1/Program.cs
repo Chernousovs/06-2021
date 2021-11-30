@@ -11,14 +11,14 @@ namespace Exercise1
             int firstNumber = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter second number: ");
             int secondNumber = Convert.ToInt32(Console.ReadLine());
-            if (firstNumber == 15 || secondNumber == 15)
+            if (firstNumber == 15 || secondNumber == 15 
+                                  || firstNumber + secondNumber == 15 
+                                  || firstNumber - secondNumber == 15 
+                                  || secondNumber - firstNumber == 15)
             {
                 res = true;
             }
-            else if (firstNumber + secondNumber == 15)
-            {
-                res = true;
-            }
+
 
             Console.WriteLine(res);
         }

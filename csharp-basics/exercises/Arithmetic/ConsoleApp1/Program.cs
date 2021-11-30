@@ -23,13 +23,13 @@ namespace Exercise10
                 switch (choise)
                 {
                     case "1":
-                        CalcCirclArea();
+                        CalculateCircleArea();
                         break;
                     case "2":
-                        CalcRectArea();
+                        CalculateRectangleArea();
                         break;
                     case "3":
-                        CalcTriangleArea();
+                        CalculateTriangleArea();
                         break;
                     case "4":
                         Console.WriteLine("Good bye");
@@ -42,7 +42,7 @@ namespace Exercise10
             } while (repeat);
         }
 
-        private static void CalcCirclArea()
+        private static void CalculateCircleArea()
         {
             Console.WriteLine("Enter circle radius");
             double r = Convert.ToDouble(Console.ReadLine());
@@ -58,7 +58,7 @@ namespace Exercise10
             }
         }
 
-        private static void CalcRectArea()
+        private static void CalculateRectangleArea()
         {
             Console.WriteLine("Enter rectangle length:");
             double rectangleLength = Convert.ToDouble(Console.ReadLine());
@@ -76,7 +76,7 @@ namespace Exercise10
             }
         }
 
-        private static void CalcTriangleArea()
+        private static void CalculateTriangleArea()
         {
             Console.WriteLine("Enter length of a triangle’s base:");
             double trianleBaseLength = Convert.ToDouble(Console.ReadLine());
@@ -87,7 +87,6 @@ namespace Exercise10
             {
                 var triangleArea = Geometry.TriangleArea(trianleBaseLength, triangleHeight);
                 Console.WriteLine(triangleArea);
-
             }
             catch (Exception e)
             {
@@ -95,6 +94,4 @@ namespace Exercise10
             }
         }
     }
-
-    
 }
