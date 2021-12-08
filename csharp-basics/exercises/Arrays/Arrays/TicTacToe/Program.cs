@@ -112,7 +112,7 @@ namespace TicTacToe
                 {
                     game.IsWinnerDefined = true;
                     game.IsGameFinished = true;
-                    game.Winner = board[0, 0];
+                    game.Winner = board[0, 2];
                 }
             }
 
