@@ -1,4 +1,6 @@
-﻿namespace Exercise4
+﻿using System;
+
+namespace Exercise4
 {
     class Program
     {
@@ -9,19 +11,21 @@
 
             /*
             todo - use for
-            for (?) 
+            */
+
+            for (var i = 0; i < vowels.Length; i++)
             {
                 Console.WriteLine(vowels[i]);
             }
-            */
 
             /*
             todo - use foreach
-            for (?) 
+            */
+
+            foreach (var vowel in vowels)
             {
                 Console.WriteLine(vowel);
             }
-            */
         }
     }
 }
