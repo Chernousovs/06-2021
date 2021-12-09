@@ -17,7 +17,6 @@ namespace Exercise10
             for (var i = min; i <= max; i++)
             {
                 listOfNumbers.Add(i);
-                
             }
 
             Console.WriteLine(string.Join("", listOfNumbers));

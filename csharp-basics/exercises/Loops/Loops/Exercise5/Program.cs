@@ -14,7 +14,9 @@ namespace Exercise5
             string dot = ".";
             List<string> listOfDots = new List<string>();
 
-            for (int i = 0; i < 50; i++)
+            int lengthStringOfDots = 30 - (word1.Length + word2.Length);
+
+            for (int i = 0; i < lengthStringOfDots; i++)
             {
                 listOfDots.Add(dot);
             }

@@ -8,6 +8,7 @@ namespace Exercise7
         static void Main(string[] args)
         {
             bool continueGame = true;
+            bool isNotOptionSelected = true;
             List<int> scoreList = new List<int>();
             int scoreSum = 0;
             Console.WriteLine("Welcome to Piglet!");
@@ -16,34 +17,45 @@ namespace Exercise7
                 Random rnd = new Random();
                 int dice = rnd.Next(1, 7);
                 Console.WriteLine($"You rolled a {dice}");
+                isNotOptionSelected = true;
 
                 if (dice != 1)
                 {
                     scoreList.Add(dice);
                     Console.WriteLine("Roll again?");
-                    string rollAgain = Console.ReadLine();
-
-                    if (rollAgain == "y")
+                    
+                    while (isNotOptionSelected)
                     {
-                        continueGame = false;
-                    }
-                    else if(rollAgain == "n")
-                    {
-                        foreach (var score in scoreList)
+                        string rollAgain = Console.ReadLine();
+                        if (rollAgain == "y")
                         {
-                            scoreSum += score;
+                            continueGame = true;
+                            isNotOptionSelected = false;
                         }
-                        Console.WriteLine($"You got {scoreSum} points.");
-                        continueGame = true;
-                    }
+                        else if (rollAgain == "n")
+                        {
+                            foreach (var score in scoreList)
+                            {
+                                scoreSum += score;
+                            }
+                            Console.WriteLine($"You got {scoreSum} points.");
+                            continueGame = false;
+                            isNotOptionSelected = false;
+                        }
+                        else
+                        {
+                            Console.WriteLine("To continue press - y \n" +
+                                "To quit press - n");
+                        }
+                    }                   
                 }
                 else
                 {
                     Console.WriteLine($"You got {scoreSum} points.");
-                    continueGame = true;
+                    continueGame = false;
                 }
 
-            } while (!continueGame);
+            } while (continueGame);
         }
     }
 }
