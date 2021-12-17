@@ -23,7 +23,11 @@ namespace ListExercise5
 
             //TODO: Change the third element with "Yellow"
 
+            colors.RemoveAt(2);
+            colors.Insert(2, "Yellow");
+
             Console.WriteLine(string.Join(",", colors));
+            Console.ReadKey();
         }
     }
 }
