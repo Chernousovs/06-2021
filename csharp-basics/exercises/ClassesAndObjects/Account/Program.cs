@@ -34,17 +34,23 @@ namespace Account
             Console.WriteLine();
             Console.Write("Please enter HOW MUCH you want to transfer from A to B :");
             double howMuch = Convert.ToDouble(Console.ReadLine());
-            Account.Transfer(ref A, ref B, howMuch);
+            Transfer(ref A, ref B, howMuch);
             Console.WriteLine($"You successfully transferred {howMuch} bucks to B account\n" +
                               $"B account balance now is:  {B.Balance()}");
             Console.WriteLine();
             Console.Write("Please enter HOW MUCH you want to transfer from B to C :");
             howMuch = Convert.ToDouble(Console.ReadLine());
-            Account.Transfer(ref B, ref C, howMuch);
+            Transfer(ref B, ref C, howMuch);
             Console.WriteLine($"You successfully transferred {howMuch} bucks to C account\n" +
                               $"C account balance now is:  {C.Balance()}");
 
             Console.ReadKey();
+        }
+
+        public static void Transfer(ref Account from, ref Account to,  double howMuch)
+        {
+            from.Withdrawal(howMuch);
+            to.Deposit(howMuch);
         }
     }
 }

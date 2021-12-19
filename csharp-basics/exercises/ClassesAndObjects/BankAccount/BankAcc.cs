@@ -18,7 +18,6 @@ namespace BankAccount
 
         public decimal Balance { get; }
 
-
         public string ShowUserNameAndBalance()
         {
             if (Balance > 0)
@@ -29,9 +28,6 @@ namespace BankAccount
             {
                 return $"{Name}, -{Math.Abs(Balance):C}";
             }
-            
         }
-        
-
     }
 }

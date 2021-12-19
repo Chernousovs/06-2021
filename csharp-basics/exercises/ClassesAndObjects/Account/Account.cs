@@ -39,11 +39,5 @@ namespace Account
             get => _name;
             set => _name = value;
         }
-
-        public static void Transfer(ref Account from, ref Account to,  double howMuch)
-        {
-            from.Withdrawal(howMuch);
-            to.Deposit(howMuch);
-        }
     }
 }
