@@ -9,17 +9,24 @@ namespace Exercise3
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter name count in list :   ");
-            int nameCount = int.Parse(Console.ReadLine());
-            List<string> listOfNames = new List<string>();
+            HashSet<string> listOfNames = new HashSet<string>();
+            bool exit = false;
 
-            for (int i = 0; i < nameCount; i++)
+            do
             {
                 Console.Write("Enter name: ");
-                listOfNames.Add(Console.ReadLine());
-            }
+                string name = Console.ReadLine();
+                if (string.IsNullOrEmpty(name))
+                {
+                    exit = true;
+                }
+                else
+                {
+                    listOfNames.Add(name);
+                }
+            } while (!exit);
 
-            Console.WriteLine($"Unique name list contains: {string.Join(", ", listOfNames.ToHashSet())}");
+            Console.WriteLine($"Unique name list contains: {string.Join(", ", listOfNames)}");
         }
     }
 }

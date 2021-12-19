@@ -8,12 +8,20 @@ namespace Exercise4
         static void Main(string[] args)
         {
             Console.Write("Enter number to check is it HAPPY or not: ");
-            int sum = 0;
+            
             string number = Console.ReadLine();
             int startNumber = Convert.ToInt32(number);
-            int[] arr = number.ToCharArray().Select(n => Convert.ToInt32(n.ToString())).ToArray();
-            bool exit = false;
 
+            Console.WriteLine(IsHappy(startNumber) ? "This number is HAPPY" : "This number NOT HAPPY");
+
+            Console.ReadKey();
+        }
+
+        private static bool IsHappy(int startNumber)
+        {
+            int[] arr = startNumber.ToString().Select(n => Convert.ToInt32(n.ToString())).ToArray();
+            int sum = 0;
+            bool exit = false;
             do
             {
                 for (int i = 0; i < arr.Length; i++)
@@ -27,22 +35,14 @@ namespace Exercise4
                 }
                 else
                 {
-                    arr = sum.ToString().ToCharArray().Select(n => Convert.ToInt32(n.ToString())).ToArray();
+                    arr = sum.ToString().Select(n => Convert.ToInt32(n.ToString())).ToArray();
+
                     sum = 0;
                 }
 
             } while (!exit);
 
-            if (sum == 1)
-            {
-                Console.WriteLine("This number is HAPPY");
-            }
-            else
-            {
-                Console.WriteLine("This number NOT HAPPY");
-            }
-
-            Console.ReadKey();
+            return sum == 1;
         }
     }
 }
