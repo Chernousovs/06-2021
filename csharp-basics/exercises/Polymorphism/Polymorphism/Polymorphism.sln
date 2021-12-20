@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeSounds", "..\MakeSounds
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persons", "..\Persons\Persons.csproj", "{D62405B5-BA62-410C-AE3D-E5AD11CEBD86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise3", "Exercise3\Exercise3.csproj", "{22E36FD5-0790-492C-B159-764C9326B5F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{D62405B5-BA62-410C-AE3D-E5AD11CEBD86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D62405B5-BA62-410C-AE3D-E5AD11CEBD86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D62405B5-BA62-410C-AE3D-E5AD11CEBD86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22E36FD5-0790-492C-B159-764C9326B5F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22E36FD5-0790-492C-B159-764C9326B5F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22E36FD5-0790-492C-B159-764C9326B5F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22E36FD5-0790-492C-B159-764C9326B5F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
