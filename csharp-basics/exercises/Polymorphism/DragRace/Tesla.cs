@@ -8,12 +8,12 @@ namespace DragRace
 
         public void SpeedUp() 
         {
-            currentSpeed;
+            //currentSpeed;
         }
 
         public void SlowDown() 
         {
-            currentSpeed;
+            //currentSpeed;
         }
 
         public string ShowCurrentSpeed() 
