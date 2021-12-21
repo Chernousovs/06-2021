@@ -6,7 +6,6 @@ namespace Exercise3
     {
         static void Main(string[] args)
         {
-
             FuelGauge fuelGauge = new FuelGauge(0.0);
             Ododmeter odometer = new Ododmeter(256000.0, fuelGauge);
 

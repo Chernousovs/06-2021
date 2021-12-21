@@ -12,7 +12,7 @@ namespace VideoStore.Tests
     public class VideoTests
     {
         [TestMethod]
-        public void AverageRatingTest()
+        public void AverageRating_SetAverageRating_ReturnAverageRating()
         {
             // Arrange
             Video newVideo = new Video("Star Wars Episode IV: A New Hope");
@@ -25,7 +25,7 @@ namespace VideoStore.Tests
         }
 
         [TestMethod]
-        public void AverageRatingTest_ReceivingRating()
+        public void ReceivingRating_SetUsersRating_ReturnAverageRating()
         {
             // Arrange
             Video newVideo = new Video("Star Wars Episode IV: A New Hope");
@@ -41,7 +41,7 @@ namespace VideoStore.Tests
         }
 
         [TestMethod]
-        public void AvailableTest()
+        public void Available_CheckIsAvailable_ReturnTrue()
         {
             // Arrange
             Video newVideo = new Video("Star Wars Episode IV: A New Hope");
@@ -54,7 +54,7 @@ namespace VideoStore.Tests
         }
 
         [TestMethod]
-        public void AvailableTest_BeingCheckedOut()
+        public void AvailableTest_AfterBeingCheckedOut_ReturnsFalse()
         {
             // Arrange
             Video newVideo = new Video("Star Wars Episode IV: A New Hope");
@@ -68,7 +68,7 @@ namespace VideoStore.Tests
         }
 
         [TestMethod]
-        public void AvailableTest_BeingReturned()
+        public void Available_AfterBeingReturned_ReturnTrue()
         {
             // Arrange
             Video newVideo = new Video("Star Wars Episode IV: A New Hope");
@@ -83,7 +83,7 @@ namespace VideoStore.Tests
         }
 
         [TestMethod]
-        public void ToStringTest()
+        public void ToString_VideoTitle_ReturnVideoTitleAsString()
         {
             // Arrange
             Video newVideo = new Video("Star Wars Episode IV: A New Hope");

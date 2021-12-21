@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account", "Account\Account.csproj", "{A78CD5DF-1FF9-4A14-A78F-7AED668C98A4}"
-	ProjectSection(ProjectDependencies) = postProject
-		{92836C49-3AB4-4FDD-90F4-2E871B71F48C} = {92836C49-3AB4-4FDD-90F4-2E871B71F48C}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount", "BankAccount\BankAccount.csproj", "{4A462DDE-D798-4818-BB68-2116834B0035}"
 EndProject
@@ -24,16 +21,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise4", "Exercise4\Exer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise5", "Exercise5\Exercise5.csproj", "{0E1267B1-CDA2-4629-845A-800E0887562D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest", "DateTest\UnitTest.csproj", "{92836C49-3AB4-4FDD-90F4-2E871B71F48C}"
-	ProjectSection(ProjectDependencies) = postProject
-		{0E1267B1-CDA2-4629-845A-800E0887562D} = {0E1267B1-CDA2-4629-845A-800E0887562D}
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise7", "Exercise7\Exercise7.csproj", "{BE41C38D-06C9-4800-AE80-AB2034F66EB5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise8", "Exercise8\Exercise8.csproj", "{B91D66AE-0921-4CC3-BBBC-BE30EF0FB40A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise9", "Exercise9\Exercise9.csproj", "{0E935F71-F983-46EB-8306-72121F58DDA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise9", "Exercise9\Exercise9.csproj", "{0E935F71-F983-46EB-8306-72121F58DDA5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest", "UnitTests\UnitTest.csproj", "{639CE0CC-4F39-4D3D-AF4D-0BCB3250F3FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,10 +71,6 @@ Global
 		{0E1267B1-CDA2-4629-845A-800E0887562D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E1267B1-CDA2-4629-845A-800E0887562D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E1267B1-CDA2-4629-845A-800E0887562D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{92836C49-3AB4-4FDD-90F4-2E871B71F48C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92836C49-3AB4-4FDD-90F4-2E871B71F48C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92836C49-3AB4-4FDD-90F4-2E871B71F48C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92836C49-3AB4-4FDD-90F4-2E871B71F48C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BE41C38D-06C9-4800-AE80-AB2034F66EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BE41C38D-06C9-4800-AE80-AB2034F66EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE41C38D-06C9-4800-AE80-AB2034F66EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -93,6 +83,10 @@ Global
 		{0E935F71-F983-46EB-8306-72121F58DDA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E935F71-F983-46EB-8306-72121F58DDA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E935F71-F983-46EB-8306-72121F58DDA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{639CE0CC-4F39-4D3D-AF4D-0BCB3250F3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{639CE0CC-4F39-4D3D-AF4D-0BCB3250F3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{639CE0CC-4F39-4D3D-AF4D-0BCB3250F3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{639CE0CC-4F39-4D3D-AF4D-0BCB3250F3FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

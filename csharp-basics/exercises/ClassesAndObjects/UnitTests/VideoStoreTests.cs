@@ -13,7 +13,7 @@ namespace VideoStore.Tests
     public class VideoStoreTests
     {
         [TestMethod]
-        public void ListInventoryTest()
+        public void ListInventory_SetTitles_ReturnsListOfTitles()
         {
             // Arrange
             VideoStore videoStore = new VideoStore();
@@ -44,7 +44,7 @@ namespace VideoStore.Tests
         }
 
         [TestMethod]
-        public void ListInventoryTest_Checkout()
+        public void Checkout_ListOfTitles_ReturnCheckedOutTitles()
         {
             // Arrange
             VideoStore videoStore = new VideoStore();
@@ -77,7 +77,7 @@ namespace VideoStore.Tests
         }
 
         [TestMethod]
-        public void ListInventoryTest_ReturnVideo()
+        public void ReturnVideo_ListOfTitles_Return_ReturnedTitles()
         {
             // Arrange
             VideoStore videoStore = new VideoStore();
@@ -113,7 +113,7 @@ namespace VideoStore.Tests
         }
 
         [TestMethod]
-        public void ListInventoryTest_TakeUsersRating()
+        public void TakeUsersRating_ListOfTitles_Return_UsersRating()
         {
             // Arrange
             VideoStore videoStore = new VideoStore();

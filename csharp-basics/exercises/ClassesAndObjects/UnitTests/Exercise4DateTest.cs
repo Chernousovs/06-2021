@@ -9,7 +9,7 @@ namespace DateTest
     public class Exercise4DateTest
     {
         [TestMethod]
-        public void DateTest()
+        public void DisplayDate_SetDate_Success()
         {
             // Arrange
             var stringWriter = new StringWriter();

@@ -12,7 +12,7 @@ namespace Exercise7.Tests
     public class DogTests
     {
         [TestMethod]
-        public void FatherNameTest()
+        public void FatherName_AddParentData_NamesAreEqual()
         {
             // Arrange
             Dog didiDog = new Dog("Didi", "female");
@@ -30,7 +30,7 @@ namespace Exercise7.Tests
         }
 
         [TestMethod]
-        public void HasSameMotherAsTest()
+        public void HasSameMotherAs__AddParentData_MothersAreEqual()
         {
             // Arrange
             Dog didiDog = new Dog("Didi", "female");

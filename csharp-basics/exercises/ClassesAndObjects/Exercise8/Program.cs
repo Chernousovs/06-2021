@@ -11,10 +11,7 @@ namespace Exercise8
             
             Console.Write($"How much money is in the account?: ");
             double startingAmount = Convert.ToDouble(Console.ReadLine());
-            
             SavingsAccount savingsAccount = new SavingsAccount(startingAmount);
-
-            
 
             Console.Write("Enter the annual interest rate: ");
             double annualInterestRate = Convert.ToDouble(Console.ReadLine());
@@ -24,7 +21,6 @@ namespace Exercise8
             accountTerm = Convert.ToInt32(Console.ReadLine());
             savingsAccount.SetAccountTerm(accountTerm);
             
-
             for (var i = 1; i <= savingsAccount.AccountTerm; i++)
             {
                 Console.Write($"Enter amount deposited for month: {i}: ");

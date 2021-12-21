@@ -11,12 +11,10 @@ namespace Exercise4
                 new ("Glass", "Buena Vista International", "PG­13"),
                 new ("Spider-Man: Into the Spider-Verse", "Columbia Pictures")};
 
-            
             foreach (var movie in Movie.GetPG(movies))
             {
                 Console.WriteLine(movie.Title);
             }
-
         }
     }
 }

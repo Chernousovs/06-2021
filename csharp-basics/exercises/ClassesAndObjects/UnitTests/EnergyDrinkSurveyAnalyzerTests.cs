@@ -12,7 +12,7 @@ namespace EnergyDrinks.Tests
     public class EnergyDrinkSurveyAnalyzerTests
     {
         [TestMethod]
-        public void CalculateEnergyDrinkersTest()
+        public void CalculateEnergyDrinkers_100_Surveyed_Returns_14_Percent()
         {
             // Arrange
             EnergyDrinkSurveyAnalyzer energyDrinkSurveyAnalyzer = new EnergyDrinkSurveyAnalyzer(100);
@@ -25,7 +25,7 @@ namespace EnergyDrinks.Tests
         }
 
         [TestMethod]
-        public void CalculatePreferCitrusTest()
+        public void CalculatePreferCitrus_100_Surveyed_Returns_9_Percent()
         {
             // Arrange
             EnergyDrinkSurveyAnalyzer energyDrinkSurveyAnalyzer = new EnergyDrinkSurveyAnalyzer(100);
