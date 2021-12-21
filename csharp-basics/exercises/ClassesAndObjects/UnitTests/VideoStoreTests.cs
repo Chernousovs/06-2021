@@ -18,16 +18,13 @@ namespace VideoStore.Tests
             // Arrange
             VideoStore videoStore = new VideoStore();
 
-            List<string> listOfTitles = new List<string>();
+            var title1 = "The Matrix";
+            var title2 = "Godfather II";
+            var title3 = "Star Wars Episode IV: A New Hope";
 
-            listOfTitles.Add("The Matrix");
-            listOfTitles.Add("Godfather II");
-            listOfTitles.Add("Star Wars Episode IV: A New Hope");
-            
-            foreach (var title in listOfTitles)
-            {
-                videoStore.AddVideo(title);
-            }
+            videoStore.AddVideo(title1);
+            videoStore.AddVideo(title2);
+            videoStore.AddVideo(title3);
 
             var stringWriter = new StringWriter();
             Console.SetOut(stringWriter);
@@ -38,9 +35,9 @@ namespace VideoStore.Tests
             // Assert
             var output = stringWriter.ToString();
             Assert.AreEqual(
-                "The Matrix | Average rating: 0 | Available NOW\r\n" +
-                "Godfather II | Average rating: 0 | Available NOW\r\n" +
-                "Star Wars Episode IV: A New Hope | Average rating: 0 | Available NOW\r\n", output);
+                $"{title1} | Average rating: 0 | Available NOW\r\n" +
+                $"{title2} | Average rating: 0 | Available NOW\r\n" +
+                $"{title3} | Average rating: 0 | Available NOW\r\n", output);
         }
 
         [TestMethod]

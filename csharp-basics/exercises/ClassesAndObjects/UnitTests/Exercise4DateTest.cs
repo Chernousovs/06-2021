@@ -8,12 +8,13 @@ namespace DateTest
     [TestClass]
     public class Exercise4DateTest
     {
+        private static StringWriter _stringWriter = new StringWriter();
+
         [TestMethod]
         public void DisplayDate_SetDate_Success()
         {
             // Arrange
-            var stringWriter = new StringWriter();
-            Console.SetOut(stringWriter);
+            Console.SetOut(_stringWriter);
             int Month = 12;
             int Day = 25;
             int Year = 2021;
@@ -23,7 +24,7 @@ namespace DateTest
             date.DisplayDate();
 
             // Assert
-            var output = stringWriter.ToString();
+            var output = _stringWriter.ToString();
             Assert.AreEqual("Date is 12 / 25 / 2021\r\n", output);
         }
     }

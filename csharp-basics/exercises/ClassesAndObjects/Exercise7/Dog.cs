@@ -17,8 +17,10 @@ namespace Exercise7
             _sex = sex;
         }
 
-        public void AddParentData(ref Dog motherData, ref Dog fatherData)
+        public Dog(string name, string sex, ref Dog motherData, ref Dog fatherData)
         {
+            _name = name;
+            _sex = sex;
             _mother = motherData;
             _father = fatherData;
         }

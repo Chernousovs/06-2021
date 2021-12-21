@@ -7,20 +7,15 @@ namespace Exercise7
     {
         static void Main(string[] args)
         {
-            Dog maxDog = new Dog("Max", "male");
-            Dog rockyDog = new Dog("Rocky", "male");
             Dog sparkyDog = new Dog("Sparky", "male");
-            Dog busterDog = new Dog("Buster", "male");
             Dog samDog = new Dog("Sam", "male");
             Dog ladyDog = new Dog("Lady", "female");
             Dog mollyDog = new Dog("Molly", "female");
-            Dog cocoDog = new Dog("Coco", "female");
-
-            maxDog.AddParentData(ref ladyDog, ref rockyDog);
-            cocoDog.AddParentData(ref mollyDog, ref busterDog);
-            rockyDog.AddParentData(ref mollyDog, ref samDog);
-            busterDog.AddParentData(ref ladyDog, ref sparkyDog);
-           
+            Dog rockyDog = new Dog("Rocky", "male", ref mollyDog, ref samDog);
+            Dog maxDog = new Dog("Max", "male", ref ladyDog, ref rockyDog);
+            Dog busterDog = new Dog("Buster", "male", ref ladyDog, ref sparkyDog);
+            Dog cocoDog = new Dog("Coco", "female", ref mollyDog, ref busterDog);
+            
             Console.WriteLine(cocoDog.FatherName());
             Console.WriteLine(sparkyDog.FatherName());
 

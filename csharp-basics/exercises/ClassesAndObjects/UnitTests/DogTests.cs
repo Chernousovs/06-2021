@@ -15,12 +15,11 @@ namespace Exercise7.Tests
         public void FatherName_AddParentData_NamesAreEqual()
         {
             // Arrange
-            Dog didiDog = new Dog("Didi", "female");
             Dog samDog = new Dog("Sam", "male");
             Dog ladyDog = new Dog("Lady", "female");
+            Dog didiDog = new Dog("Didi", "female", ref ladyDog, ref samDog);
 
             //Act
-            didiDog.AddParentData(ref ladyDog, ref samDog);
             string didFatherName = didiDog.FatherName();
             string samFatherName = samDog.FatherName();
 
@@ -33,16 +32,14 @@ namespace Exercise7.Tests
         public void HasSameMotherAs__AddParentData_MothersAreEqual()
         {
             // Arrange
-            Dog didiDog = new Dog("Didi", "female");
-            Dog samDog = new Dog("Sam", "male");
             Dog ladyDog = new Dog("Lady", "female");
             Dog maxDog = new Dog("Max", "male");
+            Dog samDog = new Dog("Sam", "male", ref ladyDog, ref maxDog);
+            Dog didiDog = new Dog("Didi", "female", ref ladyDog, ref maxDog);
 
             //Act
-            didiDog.AddParentData(ref ladyDog, ref samDog);
-            maxDog.AddParentData(ref ladyDog, ref samDog);
-            bool isSameMotherAsMax = didiDog.HasSameMotherAs(maxDog);
-            bool isSameMotherAsDidi = maxDog.HasSameMotherAs(didiDog);
+            bool isSameMotherAsMax = didiDog.HasSameMotherAs(samDog);
+            bool isSameMotherAsDidi = samDog.HasSameMotherAs(didiDog);
 
             // Assert
             Assert.AreEqual(true, isSameMotherAsMax);
