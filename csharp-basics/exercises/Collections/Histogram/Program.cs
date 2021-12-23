@@ -14,7 +14,7 @@ namespace Histogram
         private static void Main(string[] args)
         {
             List<int> listOfInts = new List<int>();
-            string a = string.Join(" ", File.ReadAllLines(@"C:\Users\vtche\source\06-2021\csharp-basics\exercises\Collections\Histogram\midtermscores.txt").ToList());
+            string a = string.Join(" ", File.ReadAllLines(@"..\..\..\Histogram\midtermscores.txt").ToList());
             var intsList = a.Split(' ');
 
             foreach (var num in intsList)
