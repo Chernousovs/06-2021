@@ -48,14 +48,13 @@ namespace VideoStore.Tests
 
             List<string> listOfTitles = new List<string>();
 
-            listOfTitles.Add("The Matrix");
-            listOfTitles.Add("Godfather II");
-            listOfTitles.Add("Star Wars Episode IV: A New Hope");
+            var title1 = "The Matrix";
+            var title2 = "Godfather II";
+            var title3 = "Star Wars Episode IV: A New Hope";
             
-            foreach (var title in listOfTitles)
-            {
-                videoStore.AddVideo(title);
-            }
+            videoStore.AddVideo(title1);
+            videoStore.AddVideo(title2);
+            videoStore.AddVideo(title3);
 
             var stringWriter = new StringWriter();
             Console.SetOut(stringWriter);
@@ -81,14 +80,13 @@ namespace VideoStore.Tests
 
             List<string> listOfTitles = new List<string>();
 
-            listOfTitles.Add("The Matrix");
-            listOfTitles.Add("Godfather II");
-            listOfTitles.Add("Star Wars Episode IV: A New Hope");
+            var title1 = "The Matrix";
+            var title2 = "Godfather II";
+            var title3 = "Star Wars Episode IV: A New Hope";
             
-            foreach (var title in listOfTitles)
-            {
-                videoStore.AddVideo(title);
-            }
+            videoStore.AddVideo(title1);
+            videoStore.AddVideo(title2);
+            videoStore.AddVideo(title3);
 
             var stringWriter = new StringWriter();
             Console.SetOut(stringWriter);
@@ -117,14 +115,13 @@ namespace VideoStore.Tests
 
             List<string> listOfTitles = new List<string>();
 
-            listOfTitles.Add("The Matrix");
-            listOfTitles.Add("Godfather II");
-            listOfTitles.Add("Star Wars Episode IV: A New Hope");
+            var title1 = "The Matrix";
+            var title2 = "Godfather II";
+            var title3 = "Star Wars Episode IV: A New Hope";
             
-            foreach (var title in listOfTitles)
-            {
-                videoStore.AddVideo(title);
-            }
+            videoStore.AddVideo(title1);
+            videoStore.AddVideo(title2);
+            videoStore.AddVideo(title3);
 
             var stringWriter = new StringWriter();
             Console.SetOut(stringWriter);

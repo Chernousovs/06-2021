@@ -8,7 +8,6 @@ namespace Exercise3
         {
             FuelGauge fuelGauge = new FuelGauge(0.0);
             Ododmeter odometer = new Ododmeter(256000.0, fuelGauge);
-
             Console.WriteLine("Please enter how many kilometers you want to ride");
             int km = int.Parse(Console.ReadLine());
 
