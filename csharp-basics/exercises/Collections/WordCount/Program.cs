@@ -10,7 +10,12 @@ namespace WordCount
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string text = System.IO.File.ReadAllText(@"C:\Users\vtche\source\06-2021\csharp-basics\exercises\Collections\WordCount\lear.txt");
+
+            Console.WriteLine($"Lines = {text.Split('\n').Count()}\n" +
+                              $"Words = {text.Split('\n', ' ').Count()}\n" +
+                              $"Chars = {text.ToCharArray().Count()}");
+            Console.ReadKey();
         }
     }
 }

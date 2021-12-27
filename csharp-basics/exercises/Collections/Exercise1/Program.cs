@@ -23,10 +23,21 @@ namespace Exercise1
             string[] array = { "Audi", "BMW", "Honda", "Mercedes", "VolksWagen", "Mercedes", "Tesla" };
 
             //todo - replace array with an List and print out the results
+            Console.WriteLine(string.Join(" ", array.ToList()));
 
             //todo - replace array with a HashSet and print out the results
+            Console.WriteLine(string.Join(" ", array.ToHashSet()));
 
             //todo - replace array with a Dictionary (use brand as key and origination as value) and print out the results
+
+            string[] origination = {"Germany", "Germany", "Japan", "Germany", "Germany", "USA"};
+
+            var dictionary = array.ToHashSet().Zip(origination, (car, country) => new { car, country })
+                .ToDictionary(item => item.car, item => item.country);
+            
+            Console.WriteLine(string.Join("", dictionary));
+            
+            Console.ReadKey();
         }
     }
 }
