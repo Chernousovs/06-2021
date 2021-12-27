@@ -1,23 +1,27 @@
-﻿namespace Account
+﻿using System.Runtime.InteropServices;
+
+namespace Account
 {
     class Account
     {
         private string _name;
         private double _money;
+        
 
-        public Account(string v1, double v2)
+        public Account(string name, double money)
         {
-            
+            _name = name;
+            _money = money;
         }
 
-        public double Withdrawal(double i)
+        public double Withdrawal(double withdrawn)
         {
-            return i;
+            return _money -= withdrawn;
         }
 
-        public void Deposit(double i)
+        public void Deposit(double deposit)
         {
-            
+            _money += deposit;
         }
 
         public double Balance()

@@ -15,16 +15,18 @@ namespace FuelConsumptionCalculator
             
             Console.WriteLine();
 
-            Car car = new Car(0);
-            Car car1 = new Car(0);
+            Car car = new Car(100000.00, 100600.0, 60);
+            Car car1 = new Car(0.0, 500.0, 20);
             for (int i = 0; i < 3; i++)
             {
-                Console.Write("Enter first reading: ");
+                Console.WriteLine("for Car");
+                Console.Write("Enter first reading : ");
                 startKilometers = Convert.ToInt32(Console.ReadLine());    
-                Console.Write("Enter liters reading: ");
+                Console.Write("Enter liters reading for Car: ");
                 liters = Convert.ToInt32(Console.ReadLine());
                 car.FillUp(startKilometers, liters);
                 
+                Console.WriteLine("for Car1");
                 Console.Write("Enter first reading: ");
                 startKilometers = Convert.ToInt32(Console.ReadLine());    
                 Console.Write("Enter liters reading: ");
@@ -32,8 +34,9 @@ namespace FuelConsumptionCalculator
                 car1.FillUp(startKilometers, liters);
             }
 
-            Console.WriteLine("Kilometers per liter are " + car.CalculateConsumption() + " gasHog:" + car.GasHog());
-            Console.WriteLine("Car1 Kilometers per liter are " + car1.CalculateConsumption()+ " economyCar:" + car.EconomyCar());
+            Console.WriteLine();
+            Console.WriteLine("Car Kilometers per liter are " + car.CalculateConsumption() + " gasHog:" + car.IsGasHog());
+            Console.WriteLine("Car1 Kilometers per liter are " + car1.CalculateConsumption()+ " economyCar:" + car1.IsEconomyCar());
             Console.ReadKey();
         }
     }
