@@ -2,21 +2,26 @@
 
 namespace CheckOddEven 
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             int enteredNumber = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine(CheckOddOrEven(enteredNumber));
+            Console.WriteLine("Bye!");
+        }
 
+        public static string CheckOddOrEven(int enteredNumber)
+        {
             if (0 == enteredNumber % 2)
             {
-                Console.WriteLine($"{enteredNumber} is Even Number");
+                return $"{enteredNumber} is Even Number";
             }
             else
             {
-                Console.WriteLine($"{enteredNumber} is Odd Number");
+                return $"{enteredNumber} is Odd Number";
             }
-            Console.WriteLine("Bye!");
         }
     }
 }

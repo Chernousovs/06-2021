@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exercise1
 {
-    class Product
+    public class Product
     {
         private string _name;
         private double _price;
@@ -17,6 +17,10 @@ namespace Exercise1
             _price = priceAtStart;
             _amount = amountAtStart;
         }
+
+        public double Price => _price;
+
+        public int Amount => _amount;
 
         public void PrintProduct()
         {

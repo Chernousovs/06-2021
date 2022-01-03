@@ -6,7 +6,7 @@ using Exercise5;
 namespace DateTest
 {
     [TestClass]
-    public class Exercise4DateTest
+    public class Exercise5DateTest
     {
         private static StringWriter _stringWriter = new StringWriter();
 

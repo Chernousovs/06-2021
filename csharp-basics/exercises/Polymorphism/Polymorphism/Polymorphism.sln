@@ -17,7 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persons", "..\Persons\Perso
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise3", "Exercise3\Exercise3.csproj", "{22E36FD5-0790-492C-B159-764C9326B5F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise6", "Exercise6\Exercise6.csproj", "{E55A3FA9-E379-4975-9F0F-8C7C8BDE95A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise6", "Exercise6\Exercise6.csproj", "{E55A3FA9-E379-4975-9F0F-8C7C8BDE95A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DragRace.Tests", "DragRace.Tests\DragRace.Tests.csproj", "{621117B2-709B-487D-8FDF-880535BFD948}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise6.Tests", "Exercise6.Tests\Exercise6.Tests.csproj", "{0A9AD864-47C8-4EA2-AE9A-8C12BCD53C1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{E55A3FA9-E379-4975-9F0F-8C7C8BDE95A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E55A3FA9-E379-4975-9F0F-8C7C8BDE95A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E55A3FA9-E379-4975-9F0F-8C7C8BDE95A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{621117B2-709B-487D-8FDF-880535BFD948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{621117B2-709B-487D-8FDF-880535BFD948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{621117B2-709B-487D-8FDF-880535BFD948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{621117B2-709B-487D-8FDF-880535BFD948}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A9AD864-47C8-4EA2-AE9A-8C12BCD53C1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A9AD864-47C8-4EA2-AE9A-8C12BCD53C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A9AD864-47C8-4EA2-AE9A-8C12BCD53C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A9AD864-47C8-4EA2-AE9A-8C12BCD53C1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

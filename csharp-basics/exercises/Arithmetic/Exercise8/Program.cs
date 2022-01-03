@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Exercise8
 {
-    class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
@@ -14,14 +14,7 @@ namespace Exercise8
             int hoursWorked = Convert.ToInt32(Console.ReadLine());
             string errorMessage = "Error, check input data";
 
-            if ( 40 > hoursWorked || hoursWorked > 60 || basePay < 8)
-            {
-                Console.WriteLine(errorMessage);
-            }
-            else
-            {
-                Console.WriteLine($"Employee's total Salary: {TotalPay(basePay, hoursWorked)}");
-            }
+            Console.WriteLine(DisplayTotalSalary(hoursWorked, basePay, errorMessage));
         }
 
         public static decimal TotalPay(decimal basePay, int hoursWorked)
@@ -35,6 +28,18 @@ namespace Exercise8
             decimal totalSalary = baseHours * basePay + overtime;
             
             return totalSalary;
+        }
+
+        public static string DisplayTotalSalary(int hoursWorked, decimal basePay ,string errorMessage)
+        {
+            if ( 40 > hoursWorked || hoursWorked > 60 || basePay < 8)
+            {
+                return errorMessage;
+            }
+            else
+            {
+                return $"Employee's total Salary: {TotalPay(basePay, hoursWorked)}";
+            }
         }
     }
 }
