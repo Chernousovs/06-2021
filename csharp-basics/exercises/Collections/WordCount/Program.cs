@@ -1,21 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace WordCount
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            string text = System.IO.File.ReadAllText(@"C:\Users\vtche\source\06-2021\csharp-basics\exercises\Collections\WordCount\lear.txt");
+            string text = File.ReadAllText(@"..\..\..\WordCount\lear.txt");
 
-            Console.WriteLine($"Lines = {text.Split('\n').Count()}\n" +
-                              $"Words = {text.Split('\n', ' ').Count()}\n" +
-                              $"Chars = {text.ToCharArray().Count()}");
+            Console.WriteLine(LineCounter(text));
+            Console.WriteLine(WordsCounter(text));
+            Console.WriteLine(CharsCounter(text));
             Console.ReadKey();
+        }
+
+        public static string LineCounter(string text)
+        {
+            return $"Lines = {text.Split('\n').Count()}";
+        }
+
+        public static string WordsCounter(string text)
+        {
+            return $"Words = {text.Split('\n', ' ').Count()}";
+        }
+
+        public static string CharsCounter(string text)
+        {
+            return $"Chars = {text.ToCharArray().Count()}";
         }
     }
 }

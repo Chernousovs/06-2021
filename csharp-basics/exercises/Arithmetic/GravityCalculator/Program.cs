@@ -3,7 +3,7 @@ using System;
 
 namespace GravityCalculator
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {

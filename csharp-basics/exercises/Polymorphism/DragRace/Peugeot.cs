@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DragRace
 {
-    class Peugeot : ICar, IBoostable
+    public class Peugeot : ICar, IBoostable
     {
         private int _currentSpeed = 0;
 

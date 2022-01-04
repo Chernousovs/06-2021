@@ -2,7 +2,7 @@
 
 namespace Account
 {
-    class Account
+    public class Account
     {
         private string _name;
         private double _money;

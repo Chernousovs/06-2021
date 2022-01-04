@@ -4,7 +4,7 @@ using System.IO;
 
 namespace Exercise10
 {
-    class Geometry
+    public class Geometry
     {
         public static double CircleArea(double r)
         {
@@ -13,7 +13,7 @@ namespace Exercise10
                 throw new InvalidDataException("r - radius can not be negative number");
             }
 
-            return Math.PI * r * 2;
+            return Math.PI * Math.Pow(r, 2);
         }
 
         public static double RectangleArea(double rectangleLength, double rectangleWidth)

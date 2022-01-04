@@ -7,7 +7,7 @@ using PhoneBook;
 
 namespace Phonebook
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {

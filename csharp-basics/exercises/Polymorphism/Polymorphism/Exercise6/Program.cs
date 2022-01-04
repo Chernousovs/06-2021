@@ -32,7 +32,6 @@ namespace Exercise6
             Console.WriteLine(cat.ToString());
             cat.MakeSound();
             cat.Eat(chicken);
-            
         }
     }
 }
